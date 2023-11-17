@@ -1,0 +1,162 @@
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 100vh;
+    max-width: 100vw;
+
+
+    background: (#FFD321);
+    background-size: 400% 400%;
+
+
+    h1 {
+        font-size: medium;
+        text-align: center;
+
+
+    }
+
+
+    h2 {
+        font-size: medium;
+        text-align: center;
+    }
+}
+
+
+#branco {
+    width: 10rem;
+    height: 25rem;
+    background-color: #FFFFFF;
+    margin-right: 5rem;
+    border-top-left-radius: 5rem;
+
+
+}
+
+
+#V {
+    margin-top: 3rem;
+    font-size: 5rem;
+    font-family: Yeseva One;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: black;
+}
+
+
+#vidral {
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    font-family: Cardo;
+    font-weight: 700;
+    word-wrap: break-word;
+    color: black;
+}
+
+
+#glass {
+    font-size: 1.5rem;
+    margin-top: -9rem;
+    font-family: Barlow;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: black;
+    text-align: center;
+    margin-left: 10rem;
+    position: absolute;
+
+}
+
+
+.escrita {
+    color: black;
+    margin-left: 5rem;
+    position: absolute;
+    margin-top: -1.5rem;
+    font-size: 15px;
+    font-family: CormorantGaramond;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+#botoes {
+    display: flex;
+    border: 0.50px #353A48 solid;
+    width: 14.2rem;
+    height: 3.45rem;
+    border-radius: 0.5rem;
+
+}
+
+#bEntrar {
+    background: black;
+    color: #f5f2d0;
+    border-radius: 0.5rem;
+    height: 3.45rem;
+    width: 7rem;
+    margin-left: 0rem;
+    position: absolute;
+    margin-top: 0rem;
+}
+
+#bCadastrar {
+    background: rgba(0, 0, 0, 0.05);
+    color: #353A48;
+    border-radius: 0.5rem;
+    height: 3.45rem;
+    margin-left: 5rem;
+    width: 7rem;
+    margin-left: 7rem;
+    position: absolute;
+    margin-top: 0.03rem;
+}
+
+@media screen and (max-width: 678px) {
+    #botoes {
+        position: absolute;
+        top: 27rem;
+        width: 14.2rem;
+        height: 3.45rem;
+    }
+
+    #branco {
+        position: absolute;
+        top: 2rem;
+        width: 8rem;
+        height: 22rem;
+    }
+
+    #V {
+        position: relative;
+        top: 0.5rem;
+        font-size: 4rem;
+    }
+
+    #vidral {
+        position: relative;
+        left: -0.7rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        width: 5rem;
+        top: 1.5rem;
+    }
+
+    #glass {
+        font-size: 1.2rem;
+        top: 21rem;
+        left: 2.7rem;
+        position: absolute;
+
+    }
+
+    .escrita {
+        width: 18rem;
+        margin-left: 4rem;
+        top: 13rem;
+
+    }
+}

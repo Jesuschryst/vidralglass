@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/principal"></ion-back-button>
+    </ion-buttons>
+    <p id="vidral">VIDRAL</p>
+    <p id="glass">GLASS</p>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="inicio">
+    <ion-button routerLink="/add-orcamento">
+      <ion-icon slot="start" name="add-circle-outline"></ion-icon>
+      Cadastrar um novo orçamento
+    </ion-button>
+
+    <ion-searchbar show-clear-button="always" clear-icon="trash-bin" [(ngModel)]="queryText" (ionInput)="filtrarCliente($event)"></ion-searchbar>
+
+    <div id="teste">
+      <ion-list [inset]="true" lines="none">
+        <ion-item-sliding *ngFor="let orcamentosCompleto of results">
+          <ion-item [routerLink]="['/add-orcamento/', orcamentosCompleto.orcamento.idOrcamento]" detail>
+            <ion-label>
+              <h1> {{orcamentosCompleto.cliente.nome}} </h1>
+              <p>Data de validade: {{orcamentosCompleto.orcamento.dataValidade}} </p>
+              <p>Status: {{orcamentosCompleto.orcamento.status}} </p>
+            </ion-label>
+          </ion-item>
+          <ion-item-options side="start">
+            <ion-item-option (click)="excluir(orcamentosCompleto)" color="danger">Excluir</ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+    </div>
+
+
+  </div>
+</ion-content>

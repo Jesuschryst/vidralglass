@@ -1,0 +1,88 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="inicio">
+
+    <ion-segment id="posicaoClassificacao" value="custom">
+      <ion-segment-button value="concluido">
+        <ion-label>Concluído</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="andamento">
+        <ion-label>Andamento</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="cancelado">
+        <ion-label>Cancelado</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <ion-list id="posicaoSVendedor">
+      <ion-item id="SVendedor">
+        <ion-select id="vendedor" interface="action-sheet" placeholder="Escolha um vendedor">
+        <ion-select-option value="1">Paulo</ion-select-option>
+        <ion-select-option value="2">Rogério</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-list id="posicaoSCliente">
+      <ion-item id="SCliente">
+        <ion-select id="cliente"interface="action-sheet" placeholder="Escolha um cliente">
+        <ion-select-option value="1">Paulo</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <div id="posicaoDVal">
+      <ion-input style="color: black;" id="posicaoQuadradoVal" label-placement="floating" fill="outline"></ion-input>
+      <div id="val">Data de validade</div>
+    </div>
+
+    <div id="posicaoDVen">
+      <ion-input style="color: black;" id="posicaoQuadradoVen" label-placement="floating" fill="outline"></ion-input>
+      <div id="ven">Data da venda</div>
+    </div>
+
+    <div id="posicaoDEn">
+      <ion-input style="color: black;" id="posicaoQuadradoEn" label-placement="floating" fill="outline"></ion-input>
+      <div id="en">Data de entrega</div>
+    </div>
+
+    <div style="width: 443px; height: 99px; left: 0px; top: 0px; position: absolute">
+      <div style="width: 430px; height: 99px; left: 0px; top: 0px; position: absolute; background: black"></div>
+      <div style="width: 252px; height: 48px; left: 191px; top: 49px; position: absolute">
+        <div style="width: 129px; height: 42px; left: 123px; top: 0px; position: absolute; color: white; font-size: 30px; font-family: Barlow; font-weight: 400; word-wrap: break-word">GLASS</div>
+        <div style="width: 177px; height: 48px; left: 0px; top: 0px; position: absolute; color: white; font-size: 30px; font-family: Cardo; font-weight: 700; word-wrap: break-word">VIDRAL</div>
+      </div>
+      <div id="bVoltar">
+        <ion-icon id="tamanhoIcon" name="arrow-back-outline" routerLink="/venda" ></ion-icon>
+      </div>
+    </div>
+    
+    
+    <div id="posicaoValor">
+      <ion-input style="color: black;" id="posicaoQuadradoValor" label-placement="floating" fill="outline"></ion-input>
+      <div id="valor">Valor</div>
+    </div>
+
+    <div id="posicaoPorcen">
+      <ion-input style="color: black;" id="posicaoQuadradoPorcen" label-placement="floating" fill="outline"></ion-input>
+      <div id="porcen">Quantos porcentos você quer aumentar?</div>
+    </div>
+
+    <div id="posicaoBGerar">
+      <div id="gerar">Gerar</div>
+    </div>
+
+    <div id="posicaoBAdd">
+      <ion-button routerLink="/add-venda" id="adicionar" fill="clear">Adicionar</ion-button>
+    </div>
+
+    <div id="posicaoBRe">
+      <ion-icon id="posicaoIconeRe" name="print-outline"></ion-icon>
+      <ion-button id="relatorio" fill="clear">Gerar <br/>relatório</ion-button>
+    </div>
+
+
+  </div>
+</ion-content>
