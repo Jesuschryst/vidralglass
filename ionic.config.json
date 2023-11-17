@@ -1,0 +1,7 @@
+{
+  "name": "VidralGlass",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

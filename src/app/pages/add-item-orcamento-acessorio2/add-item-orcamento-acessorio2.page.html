@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/principal"></ion-back-button>
+    </ion-buttons>
+    <p id="vidral">VIDRAL</p>
+    <p id="glass">GLASS</p> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="inicio">
+
+    <form [formGroup]="formGroup" (ngSubmit)="salvar()">
+    <ion-item class="posicao">
+      <ion-select label="Selecione o acessorio:" label-placement="floating" formControlName="idAcessorio">
+        <ion-select-option *ngFor="let acessorio of acessorios" value="{{acessorio.idAcessorio}}">{{acessorio.nome}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-input type="number" id="b1" label="Quantidade:" label-placement="floating" fill="outline" formControlName="quantidade" type="number"></ion-input>
+    <ion-input type="number" id="b2" label="Valor:" label-placement="floating" fill="outline" formControlName="valor" type="number"></ion-input>
+    
+    <ion-button type="submit" [disabled]="!formGroup.valid" id="add">Salvar</ion-button>
+    </form>
+
+
+  </div>
+</ion-content>

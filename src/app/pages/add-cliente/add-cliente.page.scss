@@ -1,0 +1,202 @@
+.inicio {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 100vw;
+    padding: 2rem;
+
+
+    background: (#FFD321);
+    background-size: 400% 400%;
+
+
+    h1 {
+        font-size: medium;
+        text-align: center;
+
+
+    }
+
+
+    h2 {
+        font-size: medium;
+        text-align: center;
+    }
+}
+
+ion-content {
+    --background: #FFD321;
+}
+
+.celular {
+    display: none;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+}
+
+#botoes {
+    border: 0.50px #353A48 solid;
+    width: 14.2rem;
+    height: 3.45rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.escrita {
+    color: black;
+    position: relative;
+    font-size: 35px;
+    font-family: CormorantGaramond;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+ion-toolbar {
+    --background: #000000;
+}
+
+ion-button {
+    --background: #000000;
+    color: #FFFFFF;
+    height: 4rem;
+    width: 20rem;
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+    top: 1rem;
+}
+
+#botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bSalvar {
+    left: 27rem;
+    top: 33rem;
+
+}
+
+ion-searchbar {
+    --background: #000000;
+    position: absolute;
+    top: 7rem;
+    width: 45rem;
+    border-radius: 0.5rem;
+}
+
+#vidral {
+    color: white;
+    font-size: 1.5rem;
+    font-family: Cardo;
+    font-weight: 700;
+    word-wrap: break-word;
+    left: 64rem;
+    position: absolute;
+    top: 1rem;
+}
+
+.form-control {
+    background-color: #FFD321;
+    border: 5px solid black;
+    color: #000000;
+    margin-top: 0.5rem;
+    height: 3.3rem;
+}
+
+ion-label {
+    color: #000000;
+}
+
+#glass {
+    color: white;
+    font-size: 1.5rem;
+    font-family: Barlow;
+    font-weight: 400;
+    word-wrap: break-word;
+    left: 70rem;
+    position: absolute;
+    top: 1rem;
+}
+
+@media screen and (max-width: 360px) {
+    .inicio {
+        display: flex;
+    }
+
+    .ncelular {
+        display: none;
+        width: 100%;
+    }
+
+    ion-button {
+        height: 3rem;
+        width: 10rem;
+    }
+
+    .celular {
+        display: flex;
+        width: 100%;
+    }
+
+    ion-toolbar {
+        --min-height: 3.5rem;
+        --background: #000000;
+    }
+
+    ion-back-button {
+        --icon-font-size: 1.5rem;
+    }
+
+    #vidral {
+        font-size: 1.3rem;
+        left: 11rem;
+        top: 1rem;
+        position: absolute;
+
+    }
+
+    #glass {
+        font-size: 1.3rem;
+        left: 16rem;
+        top: 1rem;
+        position: absolute;
+
+    }
+
+
+    #b2 {
+        width: 100%;
+    }
+
+    #b3 {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #add {
+        top: 31rem;
+        left: 10.8rem;
+        width: 8rem;
+        height: 3.5rem;
+    }
+
+    ion-list {
+        position: absolute;
+        top: 9rem;
+        width: 18rem;
+    }
+
+    #icon {
+        left: 13rem;
+        top: 0.5rem;
+    }
+
+}

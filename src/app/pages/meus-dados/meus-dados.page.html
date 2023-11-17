@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/principal"></ion-back-button>
+    </ion-buttons>
+    <p id="vidral">VIDRAL</p>
+    <p id="glass">GLASS</p>
+  </ion-toolbar>
+</ion-header>
+
+<div class="inicio">
+
+  <div class="ion-text-justify">
+
+    <form [formGroup]="formGroup" (ngSubmit)="salvar()">
+      <div class="row">
+        <div class="col">
+          <div class="ion-padding-vertical">
+            <ion-input type="text" label="Email" readonly label-placement="floating" fill="outline" formControlName="email"></ion-input>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="ion-padding-vertical">
+            <ion-input type="text" label="Senha" label-placement="floating" fill="outline" formControlName="senha"></ion-input>
+          </div>
+        </div>
+      </div>
+
+      <ion-button id="bSalvar" type="submit" expand="block" [disabled]="!formGroup.valid">Salvar</ion-button>
+
+    </form>
+  </div>
+</div>

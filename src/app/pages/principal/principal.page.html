@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <h1 id="V">V</h1>
+    <div id="usu">
+      <ion-button routerLink="/meus-dados">
+        <ion-icon class="iconDados" slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="inicio">
+    <div id="icone">
+      <ion-icon class="iconeSair" name="exit-outline" routerLink="/inicio"></ion-icon>
+      <p class="escritaSair">Sair</p>
+    </div>
+    <div id="escrita">
+      <div id="vidral">
+        <h2>VIDRAL</h2>
+      </div>
+      <div id="glass">
+        <h3>GLASS</h3>
+      </div>
+    </div>
+    <div id="botoes">
+      <ul>
+        <li><ion-button fill="clear" routerLink="/cliente">
+            <ion-icon slot="start" name="person-outline"></ion-icon>
+            Cliente</ion-button></li>
+        <li><ion-button fill="clear" routerLink="/orcamento">
+            <ion-icon slot="start" name="documents-outline"></ion-icon>
+            Orcamento</ion-button></li>
+        <li><ion-button fill="clear" routerLink="/venda">
+            <ion-icon slot="start" name="card-outline"></ion-icon>
+            Venda</ion-button></li>
+      </ul>
+    </div>
+  </div>
+</ion-content>
