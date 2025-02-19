@@ -5,7 +5,7 @@ Projeto criado para facilitar o trabalho dos cliente no dia a dia, fazendo com q
 
 branch main - estao as pastas do projeto, com a api o site/app e os docs
 
-branch api - sera usada pra mexer na api sem comprometer a mai
+branch api - sera usada pra mexer na api sem comprometer a main
 
 branch site/app - sera usada pra mexer nos codigos do site/app sem comprometer a main
 
